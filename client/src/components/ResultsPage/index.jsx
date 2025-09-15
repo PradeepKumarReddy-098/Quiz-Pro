@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Loader } from '../Loader';
 import Navbar from '../Navbar';
 import './index.css'
@@ -36,7 +36,17 @@ const ResultsPage = () => {
   if (loading) return <Loader />;
   if (error) return <p style={{ color: 'red' }}>{error}</p>;
 
-  if (results.length === 0) return <p>No quiz history found.</p>;
+  if (results.length === 0) {
+    return (
+    <>
+      <Navbar></Navbar>
+      <div className='no-history'>
+        <h1>OOps...!</h1>
+        <h2>No quiz history found.</h2>
+        <p>Attend the Quiz in <Link to='/'>home page</Link> to see the history</p>
+      </div>
+    </>
+  )}
 
   return (
     <>
