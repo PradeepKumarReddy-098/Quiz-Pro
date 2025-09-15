@@ -1,0 +1,24 @@
+.error-page {
+  max-width: 600px;
+  margin: 120px auto;
+  padding: 40px 20px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #f5c6cb;
+  border-radius: 12px;
+  color: #6482e4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.error-page img{
+    width: 100%;
+}
+
+.error-page h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.error-page p {
+  font-size: 1.1rem;
+}

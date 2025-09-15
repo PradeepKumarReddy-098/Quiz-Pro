@@ -1,0 +1,124 @@
+.login-signup-container{
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  width: 450px;
+  box-shadow: 0px 8px 32px rgba(12,36,77,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #222;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  gap: 12px;
+  width: 100%;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background: #e6e6e6;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.toggle-btn.active {
+  background: linear-gradient(90deg, #1885fa 60%, #1143a6 100%);
+  color: #fff;
+}
+
+.form-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-field {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input-field:focus {
+  border: 1.5px solid #1885fa;
+}
+
+.forgot-link {
+  color: #1885fa;
+  font-size: 0.95rem;
+  text-align: right;
+  margin-bottom: 11px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit-btn {
+  padding: 12px 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #1885fa 60%, #1143a6 100%);
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  box-shadow: 0px 2px 12px rgba(24,133,250,0.12);
+  transition: background 0.2s;
+}
+
+.form-footer {
+  text-align: center;
+  color: #333;
+  font-size: 0.98rem;
+}
+
+.toggle-link {
+  color: #1885fa;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width:768px){
+    .form-container{
+        width:300px;
+    }
+}

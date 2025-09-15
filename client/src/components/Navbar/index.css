@@ -1,0 +1,38 @@
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav, .nav-link-items{
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:2px 15px;
+}
+
+.nav-link-items{
+    min-width: 300px;
+    background-image: none;
+}
+
+.logout-btn{
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    padding:12px;
+}
+
+.link{
+    text-decoration: none;
+    color:#000;
+}
+
+@media screen and (max-width:700px) {
+    .nav-link-items{
+        display: none;
+    }
+}
