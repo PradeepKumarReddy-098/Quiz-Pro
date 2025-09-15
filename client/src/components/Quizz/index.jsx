@@ -20,7 +20,7 @@ const Quiz = () => {
     const fetchQuestions = async () => {
       try {
         setLoading(true)
-        const response = await fetch(`http://localhost:3001/api/quiz/questions/${categoryId}`);
+        const response = await fetch(`https://quiz-pro-backend-2.onrender.com/api/quiz/questions/${categoryId}`);
         const data = await response.json();
         if (response.ok){ setQuestions(data.questions);}
         else{
@@ -59,7 +59,7 @@ const Quiz = () => {
     setLoading(true);
     try {
       const token = localStorage.getItem('Quizz-Pro'); 
-      const response = await fetch('http://localhost:3001/api/quiz/submit-quiz', {
+      const response = await fetch('https://quiz-pro-backend-2.onrender.com/api/quiz/submit-quiz', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
