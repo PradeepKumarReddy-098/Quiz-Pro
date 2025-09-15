@@ -62,12 +62,16 @@ function LoginSignupForm() {
     const response = await request.json()
     //console.log(response)
     if(response.success){
+      setName('')
+      setRegisterEmail('')
+      setRegisterPassword('')
         toast.success(response.message)
         toast(
   "Account Created Successfully.\n\n Please login to access the Quizz Pro game.\n\n",
   {
     duration: 6000,
   }
+          
 );
     }else{
         toast.error(response.message)
@@ -76,7 +80,7 @@ function LoginSignupForm() {
         console.log(error.message)
         toast.error("Can't signup. Please try after sometime")
     }finally{
-      setIsloading(true)
+      setIsloading(false)
     }
   }
 
