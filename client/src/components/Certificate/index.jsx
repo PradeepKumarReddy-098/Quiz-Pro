@@ -10,7 +10,7 @@ const CertificatePage = () => {
     const fetchCertificate = async () => {
       try {
         const token = localStorage.getItem('Quizz-Pro');
-        const response = await fetch(`http://localhost:3001/api/quiz/certificate/${resultId}`, {
+        const response = await fetch(`https://quiz-pro-backend-2.onrender.com/api/quiz/certificate/${resultId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
