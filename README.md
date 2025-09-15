@@ -4,7 +4,7 @@ A full-stack online quiz application where users can register, take quizzes by c
 
 ---
 
-## Live Demo
+## Live Demo 
 
 Check out the live deployed app on Vercel:   
 https://quiz-pro-ecru.vercel.app/
