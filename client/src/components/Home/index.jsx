@@ -17,7 +17,7 @@ const Home = () => {
         const jwtToken = localStorage.getItem("Quizz-Pro");
         setIsLoading(true);
         const request = await fetch(
-          "http://localhost:3001/api/quiz/categories",
+          "https://quiz-pro-backend-2.onrender.com/api/quiz/categories",
           {
             method: "GET",
             headers: {
