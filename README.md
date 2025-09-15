@@ -6,7 +6,7 @@ A full-stack online quiz application where users can register, take quizzes by c
 
 ## Live Demo
 
-Check out the live deployed app on Vercel:  
+Check out the live deployed app on Vercel:   
 https://quiz-pro-ecru.vercel.app/
 
 ---
@@ -53,7 +53,7 @@ https://github.com/PradeepKumarReddy-098/Quiz-Pro
 
       cd server
 
-      npm install
+      npm install 
 
 
 3. Install frontend dependencies:
