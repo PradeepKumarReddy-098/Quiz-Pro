@@ -15,7 +15,7 @@ const ResultsPage = () => {
     const fetchResults = async () => {
       try {
         const token = localStorage.getItem('Quizz-Pro');
-        const res = await fetch('http://localhost:3001/api/quiz/my-results', {
+        const res = await fetch('https://quiz-pro-backend-2.onrender.com/api/quiz/my-results', {
           headers: { Authorization: `Bearer ${token}` }
         });
         const data = await res.json();
