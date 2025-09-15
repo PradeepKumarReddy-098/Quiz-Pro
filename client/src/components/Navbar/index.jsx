@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import './index.css'
 
 const Navbar = () => {
+    const navigate = useNavigate();
     const handleLogout = () => {
         localStorage.removeItem('Quizz-Pro')
-        window.location.href='/login'
+        navigate('/login')
 
     }
     return (
