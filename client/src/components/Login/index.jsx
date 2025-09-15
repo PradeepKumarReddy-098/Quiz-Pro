@@ -25,7 +25,7 @@ function LoginSignupForm() {
     }
 
     try{
-        const request = await fetch('http://localhost:3001/api/user/login',
+        const request = await fetch('https://quiz-pro-backend-2.onrender.com/api/user/login',
             {method:'POST',headers:{"Content-Type":'application/json'},body:JSON.stringify({email,password})});
         const response = await request.json()
         if (response.success){
@@ -56,7 +56,7 @@ function LoginSignupForm() {
         return toast.error('Password should be atleast 8 characters')
     }
 
-    const request = await fetch('http://localhost:3001/api/user/register',
+    const request = await fetch('https://quiz-pro-backend-2.onrender.com/api/user/register',
         {method:'POST',headers:{"Content-Type":'application/json'},body:JSON.stringify({name,email:registerEmail,password:registerPassword})}
     );
     const response = await request.json()
